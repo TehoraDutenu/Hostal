@@ -1,0 +1,23 @@
+/* CSS Page Accueil */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#hostal {
+	margin-top: 0!important;
+	min-height: 100%;
+	padding: 0;
+    position: relative;
+}
+
+body {
+	background-color: #f9f5ee;
+}
+
+h3, a {
+	color: white;
+	font-family: "Cormorant Garamond", serif;
+}
