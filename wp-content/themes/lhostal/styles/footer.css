@@ -1,0 +1,19 @@
+/* CSS Footer */
+
+footer {
+	background-color: black;
+	bottom: 0;
+	color: white;
+	font-family: "Cormorant Garamond", serif;
+	height: 25vh;
+	width: 100%;
+}
+
+.num {
+	color: white;
+	font-family: "Open Sans";
+}
+
+.picto {
+	width: 2vw;
+}

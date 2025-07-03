@@ -4,6 +4,8 @@
  * Template Name: Front Page
  */
 
-get_header() ?>
+get_header(); ?>
 
 <main></main>
+
+<?php get_footer(); ?>
