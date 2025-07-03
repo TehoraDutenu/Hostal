@@ -30,26 +30,24 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    color: white;
+    color: #f9f5ee;
     font-family: "Cormorant Garamond", serif;
 }
 
+/* Contenu header */
 .nom {
     height: 20vh;
 }
 
-.separateur {
-	height: 2vh;
-	margin-top: 2vh;
-}
-
 .logo-cont h3,
 .logo-cont a.tel {
-	color: white;
+	color: #f9f5ee;
     text-decoration: none;
 }
 
 h3 {
+	color: #f9f5ee;
+	font-family: "Cormorant Garamond", serif;
 	font-size: 1.30rem;
 	font-weight: 900;
 	margin-bottom: 0;

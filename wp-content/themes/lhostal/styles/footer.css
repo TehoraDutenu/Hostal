@@ -3,17 +3,64 @@
 footer {
 	background-color: black;
 	bottom: 0;
-	color: white;
+	color: #f9f5ee;
 	font-family: "Cormorant Garamond", serif;
 	height: 25vh;
 	width: 100%;
 }
 
+.footer {
+	display: flex;
+	flex-direction: row;
+	height: 25vh;
+  	justify-content: space-between;
+ 	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 4%;
+}
+
+.poste,
+.reseau,
+.phone {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.icones {
+	display: flex;
+	flex-direction: row;
+	gap: 1.50vw;
+	justify-content: space-between;
+	margin-top: 1vh;
+}
+
+h5 {
+	font-size: 1.20rem;
+	font-weight: 400;
+	margin: 0!important;
+}
+
+.adresse {
+	font-size: 1.20rem;
+}
+
 .num {
-	color: white;
+	color: #f9f5ee;
 	font-family: "Open Sans";
+	font-size: 1.50rem;
+	margin-top: 1vh;
+	text-decoration: none;
+}
+
+.footer_separateur {
+	height: 2vh;
+	margin: 10% 0;
+	margin-bottom: 12%;
+	width: 8vw;
 }
 
 .picto {
-	width: 2vw;
+	width: 3vw;
 }
