@@ -28,7 +28,7 @@ body {
 	background-color: #f9f5ee;
 	color: #f9f5ee;
 	font-family: "Cormorant Garamond", serif;
-	height: 85vh;
+	height: 90vh;
 	width: 100%;
 }
 
@@ -62,13 +62,13 @@ div.band_grill > p {
 	height: 30vh;
 	justify-content: space-between;
 }
-
+	
 .band_horaires,
 .band_terrasse,
 .band_grill {
 	align-items: center;
 	background-size: cover;
-    background-position: center;
+	background-position: center;
 	border-radius: 4px;
 	color: #f9f5ee;
 	display: flex;
@@ -84,7 +84,7 @@ div.band_grill > p {
 	text-align: center;
 	z-index: 0;
 }
-
+	
 .band_horaires {
 	background-image: url('../img/terrasse-enseigne.jpeg');
 	margin-left: 1%;
@@ -120,8 +120,6 @@ div.band_grill > p {
 
 /* - Présentation - */
 
-/* Tableaux présentation */
-
 .separateur_or {
 	height: 3vh;
 	margin-top: 2vh;
@@ -142,11 +140,12 @@ div.presen_txt > h3 {
 /* Animations scroll */
 
 .animation {
+	align-items: center;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 	gap: 2rem;
+	justify-content: space-between;
+	margin-left: 2rem;
 	padding: 3rem 5%;
 }
 
@@ -155,25 +154,34 @@ div.presen_txt > h3 {
 	flex: 1;
 }
 
+.presen_txt {
+	text-align: center;
+}
+
+div.presen_txt > p {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+div.presen_txt > h6 {
+	margin-bottom: 0;
+}
+
+.presen_img {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
 .presen_img img {
 	border-radius: 8px;
 	height: auto;
-	max-width: 100;
+	margin-top: 2vh;
+	max-width: 60%;
 }
 
-.slide-in-left,
-.slide-in-right {
-  opacity: 0;
-  transform: translateX(100px);
-  transition: all 0.8s ease;
-}
-
-.slide-in-left {
-  transform: translateX(-100px);
-}
-
-.slide-in-left.active,
-.slide-in-right.active {
-  opacity: 1;
-  transform: translateX(0);
+.separateur_noir {
+	height: 2vh;
+	margin: 5% 0;
+	width: 8vw;
 }
