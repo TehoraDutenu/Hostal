@@ -16,6 +16,7 @@
 					<img class="picto" src="<?php echo get_template_directory_uri() . '/img/instagram_blc.png'; ?>" alt="Instagram de l'Hostal">
 				</a>
 			</div>
+			<p>2025 - L'Hostal</p> 
 		</div>
 		<div class="phone">
 			<h5><b>TÉLÉPHONE</b></h5>
