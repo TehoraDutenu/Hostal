@@ -33,7 +33,12 @@ footer {
 	flex-direction: row;
 	gap: 1.50vw;
 	justify-content: space-between;
+	margin-bottom: 3vh;
 	margin-top: 1vh;
+}
+
+.picto {
+	width: 2vw;
 }
 
 h5 {
@@ -61,6 +66,17 @@ h5 {
 	width: 8vw;
 }
 
-.picto {
-	width: 2vw;
+.copyright {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.l_or {
+	color: #c29f3b;
+	font-weight: 900;
+}
+
+.h_brique {
+	color: #943939;
+	font-weight: 900;
 }

@@ -28,8 +28,9 @@ body {
 	background-color: #f9f5ee;
 	color: #f9f5ee;
 	font-family: "Cormorant Garamond", serif;
-	height: 90vh;
+ 	height: 85vh;
 	width: 100%;
+
 }
 
 h6,
@@ -185,3 +186,43 @@ div.presen_txt > h6 {
 	margin: 5% 0;
 	width: 8vw;
 }
+
+/* - Bandeau grill - */
+
+.bandeau_1 {
+	background-image: url('../img/grill_cut_lg.jpg');
+}
+
+.bandeau_1,
+.bandeau_2 {
+	height: 35vh; /* ajuste à ton besoin visuel */
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+/* - Bloc Menu - */
+
+.bloc_menu {
+	align-items: center;
+	background-color: #f9f5ee;
+	display: flex;
+	flex-direction: column;
+	font-family: "Cormorant Garamond", serif;
+/* 	height: 150vh;*/	
+/* 	margin-top: 35vh;
+ */	text-align: center;
+	width: 100%;
+}
+
+div.titre > p {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+div.titre > h3 {
+	font-size: 1.8rem!important;
+	font-weight: bolder;
+	margin-bottom: 1.5vh;
+}
+
