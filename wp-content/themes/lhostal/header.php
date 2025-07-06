@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/header.css"; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/frontpage.css"; ?>">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/footer.css"; ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . "/styles/menus.css"; ?>">
 
 	<title>L'Hostal</title>
 
@@ -38,6 +39,16 @@
 			<h3>CASTELNOU</h3>
 			<img class="separateur" src="<?php echo get_template_directory_uri(); ?>/img/separateur.png" alt="séparateur">
 			<a class="tel" href="tel:+33468534542">04 68 53 45 42</a>
+
+			<!-- Bouton menus -->
+			 <?php wp_nav_menu([
+				"theme_location" => "menu-sup",
+				"container" => "nav",
+				"container_class" => "navbar navbar-expand-lg navbar-light",
+				"menu_class" => "navbar-nav mr-auto",
+				"menu-id" => " ",
+				"walker" => new hostal_walker(),
+			 ]);?>
 		</div>
 	</header>
 

@@ -25,9 +25,7 @@
 			<img class="footer_separateur" src="<?php echo get_template_directory_uri() . '/img/separateur.png'; ?>" alt="séparateur">
 			<a class="num" href="tel:+33468534542">04 68 53 45 42</a>
 		</div>
-
 	</div>
-
 </footer>
 
 </body>

@@ -1,7 +1,7 @@
 /* En-tête avec image de fond */
 .header {
     position: relative;
-    height: 45vh;
+    height: 50vh;
     background-image: url('../img/background-header.jpg');
     background-size: cover;
     background-position: center;
@@ -66,4 +66,18 @@ h3 {
 	font-weight: 300;
 	margin-bottom: 2vh;
 	margin-top: 0.8vh;
+}
+
+/* Bouton Menus */
+
+.nav-item a {
+	border: 2px solid #C29F3B;
+	border-radius: 4px;
+	color: #f9f5ee;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.2rem;
+}
+
+.nav-item a:hover {
+	color: #C29F3B;
 }

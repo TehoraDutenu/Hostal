@@ -45,7 +45,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-		<div class="bandeau"></div>
+		<div class="bandeau_1"></div>
 		<div class="bloc_menu">
 			<img class="separateur_or" style="margin-bottom: 2vh;" src="<?php echo get_template_directory_uri() . '/img/separateur_or.png'; ?>" alt="separateur">
 			<div class="titre">
@@ -55,7 +55,6 @@ get_header(); ?>
 			<div class="cartes">
 				<img class="epd" src="<?php echo get_template_directory_uri(). '/img/epd.jpg'; ?>" alt="Carte Restaurant">
 			</div>
-		
 		</div>
 	</div>
 </main>
