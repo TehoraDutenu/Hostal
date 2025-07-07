@@ -1,10 +1,17 @@
 /* -- CSS de la page Menus -- */
 
-main.menus_main img {
-    max-width: 100%;
-    height: auto;
+.menus_main {
+	background-color: #f9f5ee;
+	margin: auto;
+	width: 80%;
+}
+
+img#la_carte {
     display: block;
+	height: auto;
+	image-rendering: auto;
     margin: 2rem auto;
+    max-width: 90% !important;
 }
 
 .menus_titre {
@@ -26,6 +33,12 @@ div.menus_titre > h3 {
 	font-size: 1.8rem!important;
 	font-weight: bolder;
 	margin-bottom: 1.5vh;
+}
+
+.separateur_menus_noir {
+	height: 2vh;
+	margin: 1% 0;
+	width: 8vw;
 }
 
 
