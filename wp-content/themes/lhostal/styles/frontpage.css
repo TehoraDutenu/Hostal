@@ -30,7 +30,6 @@ body {
 	font-family: "Cormorant Garamond", serif;
  	height: 85vh;
 	width: 100%;
-
 }
 
 h6,
@@ -121,16 +120,11 @@ div.band_grill > p {
 
 /* - Présentation - */
 
-.separateur_or {
-	height: 3vh;
-	margin-top: 2vh;
-	width: 15vw;
-}
-
 .presentation {
+	align-items: center;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	margin: auto;
 }
 
 div.presen_txt > h3 {
@@ -190,7 +184,11 @@ div.presen_txt > h6 {
 /* - Bandeau grill - */
 
 .bandeau_1 {
-	background-image: url('../img/grill_cut_lg.jpg');
+	background-image: url('../img/grill_cut.jpg');
+}
+
+.bandeau_2 {
+	background-image: url('../img/cheminée.jpg');
 }
 
 .bandeau_1,
@@ -209,10 +207,10 @@ div.presen_txt > h6 {
 	display: flex;
 	flex-direction: column;
 	font-family: "Cormorant Garamond", serif;
-/* 	height: 150vh;*/	
-/* 	margin-top: 35vh;
- */	text-align: center;
-	width: 100%;
+	margin: auto;
+	padding-top: 4vh;
+	text-align: center;
+	width: 80%;
 }
 
 div.titre > p {
@@ -223,6 +221,66 @@ div.titre > p {
 div.titre > h3 {
 	font-size: 1.8rem!important;
 	font-weight: bolder;
-	margin-bottom: 1.5vh;
+	margin-bottom: 1vh;
+}
+
+.cartes {
+	display: flex;
+	flex-direction: row;
+}
+
+.cartes img {
+	max-width: 50%;
+}
+
+/* - Bloc Groupes - */
+
+.bloc_groupes {
+	align-items: center;
+	background-color: #f9f5ee;
+	display: flex;
+	flex-direction: column;
+	font-family: "Cormorant Garamond", serif;
+}
+
+#pensez {
+	color: #000;
+	font-size: 1.5rem;
+	font-weight: bolder;
+}
+.contacts {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	justify-content: center;
+}
+
+a.groupes_tel,
+a.groupes_mail {
+	border: 3px solid #c29f3b;
+	border-radius: 4px;
+	color: black;
+	height: 5vh;
+	margin-top: 2vh;
+	padding: 7.5px;
+	text-decoration: none;
+	width: 10vw;
+}
+
+a.groupes_tel:hover,
+a.groupes_mail:hover {
+	color: #c29f3b;
+}
+
+a.groupes_tel {
+	font-family: "Open Sans";
+	font-size: 1.20rem;
+	font-weight: 300;
+}
+
+a.groupes_mail {
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 

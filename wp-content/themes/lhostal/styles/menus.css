@@ -20,6 +20,7 @@ img#la_carte {
 	display: flex;
 	flex-direction: column;
 	font-family: "Cormorant Garamond", serif;
+	margin-top: 4vh;
 	text-align: center;
 	width: 100%;
 }

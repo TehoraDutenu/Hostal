@@ -34,7 +34,7 @@ footer {
 	gap: 1.50vw;
 	justify-content: space-between;
 	margin-bottom: 3vh;
-	margin-top: 1vh;
+	margin-top: 3vh;
 }
 
 .picto {
@@ -49,13 +49,14 @@ h5 {
 
 .adresse {
 	font-size: 1.20rem;
+	margin-top: 2.5vh;
 }
 
 .num {
 	color: #f9f5ee;
 	font-family: "Open Sans";
 	font-size: 1.50rem;
-	margin-top: 1vh;
+	margin-top: 3vh;
 	text-decoration: none;
 }
 
