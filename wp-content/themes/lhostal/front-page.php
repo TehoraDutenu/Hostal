@@ -12,8 +12,8 @@ get_header(); ?>
 			<div class="bloc_img">
 				<div class="band_horaires"> 
 					<div class="overlay_1"></div>
-					<h6><b>CUISINE CATALANE ~ BAR</b></h6>
-					<h6><b>OUVERT TOUS LES JOURS DE 9h30 À 21h30</b></h6>
+					<h5><b>CUISINE CATALANE ~ BAR</b></h5>
+					<h5><b>OUVERT TOUS LES JOURS DE 9h30 À 21h30</b></h5>
 					<p>Cuisine ouverte de 12h à 21h30 non-stop sur réservation</p>
 				</div>
 				<div class="band_terrasse"> 
@@ -43,7 +43,6 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-		</div>
 		<div class="bandeau_1"></div>
 		<div class="bloc_menu">
 			<div class="titre">

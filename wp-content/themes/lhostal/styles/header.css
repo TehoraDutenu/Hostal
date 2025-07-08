@@ -1,7 +1,7 @@
 /* En-tête avec image de fond */
 .header {
     position: relative;
-    height: 50vh;
+    height: 55vh;
     background-image: url('../img/background-header.jpg');
     background-size: cover;
     background-position: center;
@@ -24,19 +24,23 @@
 
 /* Contenu centré */
 .logo-cont {
-    position: relative;
-    z-index: 2;
+    align-items: center;
+    color: #f9f5ee;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    color: #f9f5ee;
     font-family: "Cormorant Garamond", serif;
+    gap: 15px;
+	padding: 1rem;
+    position: relative;
+	text-align: center;
+    z-index: 2;
 }
 
 /* Contenu header */
 .nom {
-    height: 20vh;
+    height: 100px;
+	max-width: 80vw;
+	object-fit: contain;
 }
 
 .logo-cont h3,
@@ -46,26 +50,22 @@
 }
 
 h3 {
-	color: #f9f5ee;
-	font-family: "Cormorant Garamond", serif;
-	font-size: 1.30rem;
-	font-weight: 900;
-	margin-bottom: 0;
-	margin-top: 1vh;
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin: 0.5rem 0;
 }
 
 .separateur {
-	height: 3vh;
-	margin-top: 1vh;
-	width: 15vw;
+	height: auto;
+	margin: 1.3vh 0;
+	width: 30vw;
 }
 
 .tel {
 	font-family: "Open Sans";
-	font-size: 1.50rem;
+	font-size: 1.2rem;
 	font-weight: 300;
-	margin-bottom: 2vh;
-	margin-top: 0.8vh;
+	margin: 0.8rem 0;
 }
 
 /* Bouton Menus */
@@ -75,9 +75,96 @@ h3 {
 	border-radius: 4px;
 	color: #f9f5ee;
 	font-family: "Cormorant Garamond", serif;
-	font-size: 1.2rem;
+	font-size: 1rem;
+	font-weight: 700;
+	margin-top: 1.5rem;
+	width: 20vw;
 }
 
-.nav-item a:hover {
+
+/* -- Media Queries -- */
+
+/* ---------- TABLETTES ---------- */
+@media (min-width: 768px) {
+	.header {
+	  height: 60vh;
+	}
+  
+	.nom {
+	  max-width: 50vw;
+	  height: 140px;
+	}
+  
+	h3 {
+	  font-size: 1.5rem;
+	}
+  
+	.separateur {
+	  width: 20vw;
+	}
+  
+	.tel {
+	  font-size: 1.4rem;
+	}
+  
+	.nav-item a {
+	  font-size: 1.1rem;
+	  width: 160px;
+	}
+  }
+  
+  
+  /* ---------- DESKTOP ---------- */
+  @media (min-width: 1024px) {
+	.header {
+	  height: 70vh;
+	}
+  
+	.nom {
+	  max-width: 35vw;
+	  height: 160px;
+	}
+  
+	h3 {
+	  font-size: 1.8rem;
+	}
+  
+	.separateur {
+	  width: 12vw;
+	}
+  
+	.tel {
+	  font-size: 1.5rem;
+	}
+  
+	.nav-item a {
+	  font-size: 1.2rem;
+	  width: 180px;
+	}
+  }
+  
+  
+  /* ---------- GRANDS ÉCRANS ---------- */
+  @media (min-width: 1440px) {
+	.header {
+	  height: 75vh;
+	}
+  
+	.nom {
+	  height: 180px;
+	}
+  
+	h3 {
+	  font-size: 2rem;
+	}
+  
+	.tel {
+	  font-size: 1.6rem;
+	}
+  }
+  
+
+/* .nav-item a:hover {
 	color: #C29F3B;
 }
+ */

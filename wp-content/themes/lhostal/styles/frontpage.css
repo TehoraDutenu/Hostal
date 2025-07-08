@@ -28,7 +28,7 @@ body {
 	background-color: #f9f5ee;
 	color: #f9f5ee;
 	font-family: "Cormorant Garamond", serif;
- 	height: 85vh;
+ 	height: 180vh;
 	width: 100%;
 }
 
@@ -57,10 +57,12 @@ div.band_grill > p {
 
 .bloc_img {
 	display: flex;
-	flex-direction: row;
-	gap: 0.8rem;
-	height: 30vh;
+	flex-direction: column;
+	height: 84.5vh;
+	gap: 0.3rem;
 	justify-content: space-between;
+	margin: 1%;
+	width: 100%;
 }
 	
 .band_horaires,
@@ -76,18 +78,16 @@ div.band_grill > p {
 	flex-direction: column;
 	gap: 0.8rem;
 	justify-content: center;
-	margin-top: 1vh;
-	margin-bottom: 1vh;
+	max-width: 98vw;
 	overflow: hidden;
 	position: relative;
-	padding: 1rem;
+	padding: 2rem;
 	text-align: center;
 	z-index: 0;
 }
-	
+
 .band_horaires {
 	background-image: url('../img/terrasse-enseigne.jpeg');
-	margin-left: 1%;
 }
 
 .band_terrasse {
@@ -96,7 +96,6 @@ div.band_grill > p {
 
 .band_grill {
 	background-image: url('../img/grill.jpg');
-	margin-right: 1%;
 }
 
 .band_horaires .overlay_1,
@@ -107,7 +106,7 @@ div.band_grill > p {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -128,20 +127,19 @@ div.band_grill > p {
 }
 
 div.presen_txt > h3 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: bolder;
 }
-
-/* Animations scroll */
 
 .animation {
 	align-items: center;
 	display: flex;
-	flex-direction: row;
-	gap: 2rem;
+	flex-direction: column;
+	gap: 1rem;
 	justify-content: space-between;
-	margin-left: 2rem;
-	padding: 3rem 5%;
+	margin: auto;
+	padding: 2rem 5%;
+	width: 90%;
 }
 
 .presen_txt,
@@ -154,7 +152,7 @@ div.presen_txt > h3 {
 }
 
 div.presen_txt > p {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
@@ -166,19 +164,20 @@ div.presen_txt > h6 {
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 1rem;
 }
 
 .presen_img img {
 	border-radius: 8px;
 	height: auto;
-	margin-top: 2vh;
-	max-width: 60%;
+	max-width: 70%;
 }
 
 .separateur_noir {
 	height: 2vh;
-	margin: 5% 0;
-	width: 8vw;
+	margin: 3% 0;
+	margin-bottom: 6%;
+	width: 25vw;
 }
 
 /* - Bandeau grill - */
@@ -193,7 +192,7 @@ div.presen_txt > h6 {
 
 .bandeau_1,
 .bandeau_2 {
-	height: 35vh; /* ajuste à ton besoin visuel */
+	height: 25vh; /* ajuste à ton besoin visuel */
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -250,9 +249,8 @@ div.titre > h3 {
 }
 .contacts {
 	display: flex;
-	flex-direction: row;
-	gap: 2rem;
-	justify-content: center;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 
 a.groupes_tel,
@@ -262,9 +260,11 @@ a.groupes_mail {
 	color: black;
 	height: 5vh;
 	margin-top: 2vh;
+	min-width: 140px;
 	padding: 7.5px;
+	text-align: center;
 	text-decoration: none;
-	width: 10vw;
+	width: auto;
 }
 
 a.groupes_tel:hover,
@@ -283,4 +283,6 @@ a.groupes_mail {
 	font-size: 1.2rem;
 	font-weight: 600;
 }
+
+/* -- Media Queries -- */
 
