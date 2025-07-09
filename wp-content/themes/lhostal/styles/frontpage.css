@@ -1,3 +1,7 @@
+
+/* ******** MOBILE FIRST ******** */
+
+
 /* --- CSS Page Accueil --- */
 
 /* -- CSS Général -- */
@@ -10,13 +14,14 @@
 
 #hostal {
 	margin-top: 0!important;
-	min-height: 100%;
+	height: 100%;
 	padding: 0;
     position: relative;
 }
 
 body {
 	background-color: #f9f5ee;
+	height: 100%;
 }
 
 
@@ -28,7 +33,7 @@ body {
 	background-color: #f9f5ee;
 	color: #f9f5ee;
 	font-family: "Cormorant Garamond", serif;
- 	height: 180vh;
+ 	height: 320vh;
 	width: 100%;
 }
 
@@ -61,8 +66,9 @@ div.band_grill > p {
 	height: 84.5vh;
 	gap: 0.3rem;
 	justify-content: space-between;
-	margin: 1%;
-	width: 100%;
+	margin: auto;
+	margin-top: 1%;
+	width: 98%;
 }
 	
 .band_horaires,
@@ -78,11 +84,11 @@ div.band_grill > p {
 	flex-direction: column;
 	gap: 0.8rem;
 	justify-content: center;
-	max-width: 98vw;
 	overflow: hidden;
 	position: relative;
 	padding: 2rem;
 	text-align: center;
+	width: 100%;
 	z-index: 0;
 }
 
@@ -126,11 +132,6 @@ div.band_grill > p {
 	margin: auto;
 }
 
-div.presen_txt > h3 {
-	font-size: 1.5rem;
-	font-weight: bolder;
-}
-
 .animation {
 	align-items: center;
 	display: flex;
@@ -138,7 +139,7 @@ div.presen_txt > h3 {
 	gap: 1rem;
 	justify-content: space-between;
 	margin: auto;
-	padding: 2rem 5%;
+	padding: 1rem 5%;
 	width: 90%;
 }
 
@@ -149,6 +150,11 @@ div.presen_txt > h3 {
 
 .presen_txt {
 	text-align: center;
+}
+
+div.presen_txt > h3 {
+	font-size: 1.5rem;
+	font-weight: bolder;
 }
 
 div.presen_txt > p {
@@ -207,29 +213,29 @@ div.presen_txt > h6 {
 	flex-direction: column;
 	font-family: "Cormorant Garamond", serif;
 	margin: auto;
-	padding-top: 4vh;
+	padding: 2vh 0;
 	text-align: center;
-	width: 80%;
-}
-
-div.titre > p {
-	font-size: 1.2rem;
-	font-weight: bold;
+	width: 90%;
 }
 
 div.titre > h3 {
-	font-size: 1.8rem!important;
+	font-size: 1.5rem!important;
 	font-weight: bolder;
-	margin-bottom: 1vh;
+	margin-bottom: 1.5vh;
 }
 
-.cartes {
-	display: flex;
-	flex-direction: row;
+div.titre > p {
+	font-size: 1rem;
+	font-weight: bold;
 }
 
-.cartes img {
-	max-width: 50%;
+.titre .separateur_noir {
+	margin: 3% 0;
+}
+
+.cartes .nav-item a {
+	color: #000;
+	margin-top: 0;
 }
 
 /* - Bloc Groupes - */
@@ -242,11 +248,17 @@ div.titre > h3 {
 	font-family: "Cormorant Garamond", serif;
 }
 
+#salle img {
+	margin-top: 2vh;
+	max-width: 60%!important;
+}
+
 #pensez {
 	color: #000;
 	font-size: 1.5rem;
 	font-weight: bolder;
 }
+
 .contacts {
 	display: flex;
 	flex-direction: column;
@@ -259,17 +271,12 @@ a.groupes_mail {
 	border-radius: 4px;
 	color: black;
 	height: 5vh;
-	margin-top: 2vh;
+	margin-top: 1vh;
 	min-width: 140px;
-	padding: 7.5px;
+	padding: 4.5px;
 	text-align: center;
 	text-decoration: none;
 	width: auto;
-}
-
-a.groupes_tel:hover,
-a.groupes_mail:hover {
-	color: #c29f3b;
 }
 
 a.groupes_tel {
@@ -286,3 +293,138 @@ a.groupes_mail {
 
 /* -- Media Queries -- */
 
+/* ---------- TABLETTES ---------- */
+@media (min-width: 768px) {
+
+	.first_bloc {
+		height: 223rem;
+	}
+
+	/* - Bandeau images - */
+	.bloc_img {
+		gap: 0.5rem;
+		height: 70rem;
+	}
+
+	.band_horaires h5,
+	.band_terrasse h6,
+	.band_grill h6 {
+		font-size: 1.8rem;
+	}
+
+	div.band_horaires > p,
+	div.band_terrasse > p,
+	div.band_grill > p {
+	font-size: 1.55rem;
+	}
+
+	/* - Présentation - */
+	div.presen_txt > h3 {
+		font-size: 2rem;
+	}
+	
+	div.presen_txt > p {
+		font-size: 1.3rem;
+	}	
+
+	.presen_img img {
+		height: auto;
+		max-width: 50%;
+	}	
+
+	/* - Bloc Menu - */
+	.bloc_menu {
+		width: 80%;
+	}
+
+	div.titre > h3 {
+		font-size: 2rem!important;
+	}
+
+	div.titre > p {
+		font-size: 1.3rem;
+	}
+
+	.cartes .nav-item a:hover {
+		color: #c29f3b;
+	}
+	
+	
+	/* - Bloc Groupes - */
+	.bloc_groupes .presentation .animation {
+		width: 80%;
+	}
+
+	#salle img {
+		max-width: 40%!important;
+	}
+
+	a.groupes_tel,
+	a.groupes_mail {
+		padding: 8.5px;
+	}
+
+	a.groupes_tel:hover,
+	a.groupes_mail:hover {
+		color: #c29f3b;
+	}	
+}
+
+
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 1024px) {
+
+	.first_bloc {
+		height: 165rem;
+	}
+	/* - Bandeau images - */
+	.bloc_img {
+		display: flex;
+		flex-direction: row;
+ 		height: 15rem;
+		margin: 0.5%;
+	}
+
+	.band_horaires h5,
+	.band_terrasse h6,
+	.band_grill h6 {
+		font-size: 1.2rem;
+	}
+
+	div.band_horaires > p,
+	div.band_terrasse > p,
+	div.band_grill > p {
+	font-size: 1.1rem;
+	}
+
+	/* - Présentation - */
+	div.presen_txt > h3 {
+		font-size: 1.8rem;
+	}
+
+	div.presen_txt > p {
+		font-size: 1.2rem;
+	}
+
+	/* - Bloc Menu - */
+	div.titre > h3 {
+		font-size: 1.8rem!important;
+	}
+	
+	div.titre > p {
+		font-size: 1.2rem;
+	}
+	
+}
+
+
+/* ---------- GRANDS ÉCRANS ---------- */
+@media (min-width: 1440px) {
+	/* Présentation */
+	.separateur_noir {
+		margin: 2% 0;
+		margin-bottom: 4%;
+		width: 15vw;
+	}	
+}

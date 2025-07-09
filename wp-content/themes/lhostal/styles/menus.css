@@ -1,17 +1,14 @@
+
+/* ******** MOBILE FIRST ******** */
+
+
+
 /* -- CSS de la page Menus -- */
 
 .menus_main {
 	background-color: #f9f5ee;
 	margin: auto;
-	width: 80%;
-}
-
-img#la_carte {
-    display: block;
-	height: auto;
-	image-rendering: auto;
-    margin: 2rem auto;
-    max-width: 90% !important;
+	width: 100%;
 }
 
 .menus_titre {
@@ -25,21 +22,74 @@ img#la_carte {
 	width: 100%;
 }
 
-div.menus_titre > p {
-	font-size: 1.2rem;
-	font-weight: bold;
-}
-
 div.menus_titre > h3 {
-	font-size: 1.8rem!important;
+	font-size: 1.4rem!important;
 	font-weight: bolder;
 	margin-bottom: 1.5vh;
 }
 
+div.menus_titre > p {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
 .separateur_menus_noir {
-	height: 2vh;
-	margin: 1% 0;
-	width: 8vw;
+	height: 1rem;
+	margin: 5% 0;
+	width: 7rem;
 }
 
 
+
+/* -- Media Queries -- */
+
+/* ---------- TABLETTES ---------- */
+@media (min-width: 768px) {
+	.menus_main {
+		margin: auto;
+		width: 90%;
+	}
+	
+	.separateur_menus_noir {
+		margin: 2% 0;
+	}
+}
+
+
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 1024px) {
+	div.menus_titre > h3 {
+		font-size: 2.5rem!important;
+	}
+	
+	div.menus_titre > p {
+		font-size: 1.45rem;
+	}
+
+	.separateur_menus_noir {
+		height: 1rem;
+		width: 14rem;
+	}
+}
+
+
+
+/* ---------- GRANDS ÉCRANS ---------- */
+@media (min-width: 1440px) {
+	div.menus_titre h3 {
+		font-size: 1.8rem!important;
+	}
+
+	div.menus_titre p {
+		font-size: 1.1rem;
+	}
+
+	.menus_main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto;
+		width: 75%;
+	}
+}

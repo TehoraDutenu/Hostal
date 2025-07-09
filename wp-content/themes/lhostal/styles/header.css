@@ -1,3 +1,7 @@
+
+/* ******** MOBILE FIRST ******** */
+
+
 /* En-tête avec image de fond */
 .header {
     position: relative;
@@ -111,17 +115,21 @@ h3 {
 	  font-size: 1.1rem;
 	  width: 160px;
 	}
+
+	.nav-item a:hover {
+		color: #C29F3B;
+	}	
   }
   
   
   /* ---------- DESKTOP ---------- */
   @media (min-width: 1024px) {
 	.header {
-	  height: 70vh;
+	  height: 33rem;
 	}
   
 	.nom {
-	  max-width: 35vw;
+	  max-width: 16rem;
 	  height: 160px;
 	}
   
@@ -141,13 +149,17 @@ h3 {
 	  font-size: 1.2rem;
 	  width: 180px;
 	}
+
+	.nav-item a:hover {
+		color: #C29F3B;
+	}	
   }
   
   
   /* ---------- GRANDS ÉCRANS ---------- */
   @media (min-width: 1440px) {
 	.header {
-	  height: 75vh;
+	  height: 65vh;
 	}
   
 	.nom {
@@ -155,16 +167,16 @@ h3 {
 	}
   
 	h3 {
-	  font-size: 2rem;
+	  font-size: 1.6rem;
 	}
   
 	.tel {
 	  font-size: 1.6rem;
 	}
+
+	.nav-item a:hover {
+		color: #C29F3B;
+	}	
   }
   
 
-/* .nav-item a:hover {
-	color: #C29F3B;
-}
- */

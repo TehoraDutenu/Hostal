@@ -1,3 +1,8 @@
+
+/* ******** MOBILE FIRST ******** */
+
+
+
 /* CSS Footer */
 
 footer {
@@ -5,18 +10,15 @@ footer {
 	bottom: 0;
 	color: #f9f5ee;
 	font-family: "Cormorant Garamond", serif;
-	height: 25vh;
+	height: 50vh;
+	position: relative;
 	width: 100%;
 }
 
 .footer {
 	display: flex;
-	flex-direction: row;
-	height: 25vh;
-  	justify-content: space-between;
- 	padding-left: 20%;
-	padding-right: 20%;
-	padding-top: 3vh;
+	flex-direction: column;
+	padding: 2rem;
 }
 
 .poste,
@@ -31,45 +33,40 @@ footer {
 .icones {
 	display: flex;
 	flex-direction: row;
-	gap: 1.50vw;
+	gap: 4vw;
 	justify-content: space-between;
-	margin-bottom: 3vh;
-	margin-top: 3vh;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
 }
 
 .picto {
-	width: 2vw;
+	width: 8vw;
 }
 
 h5 {
-	font-size: 1.20rem;
+	font-size: 1rem;
 	font-weight: 400;
 	margin: 0!important;
 }
 
 .adresse {
-	font-size: 1.20rem;
-	margin-top: 2.5vh;
+	font-size: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
 }
 
 .num {
 	color: #f9f5ee;
 	font-family: "Open Sans";
-	font-size: 1.50rem;
-	margin-top: 3vh;
+	font-size: 1.2rem;
+	margin-top: 1rem;
 	text-decoration: none;
-}
-
-.footer_separateur {
-	height: 2vh;
-	margin: 10% 0;
-	margin-bottom: 12%;
-	width: 8vw;
 }
 
 .copyright {
 	font-size: 1.2rem;
 	font-weight: 600;
+	margin-top: 2.5rem;
 }
 
 .l_or {
@@ -81,3 +78,50 @@ h5 {
 	color: #943939;
 	font-weight: 900;
 }
+
+
+/* -- Media Queries -- */
+
+/* ---------- TABLETTES ---------- */
+@media (min-width: 768px) {
+	footer {
+		height: 15rem;
+		padding: 1.5rem;
+	}
+
+	.footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.picto {
+		width: 5vw;
+	}
+
+	.copyright {
+		margin-top: 1rem;
+	}
+}
+
+
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 1024px) {
+	.adresse {
+		font-size: 1.2rem;
+	}
+
+	.icones {
+		gap: 2vw;
+		margin-top: 1.5rem;
+	}
+	.picto {
+		width: 2.5rem;
+	}
+}
+
+
+
+/* ---------- GRANDS ÉCRANS ---------- */
+@media (min-width: 1440px) {}

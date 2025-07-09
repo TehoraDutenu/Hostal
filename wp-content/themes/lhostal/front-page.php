@@ -47,19 +47,29 @@ get_header(); ?>
 		<div class="bloc_menu">
 			<div class="titre">
 				<h3 style="color: #000">LA CARTE DU RESTAURANT</h3>
-				<p>Au fil des saisons nous vous faisons découvrir notre carte mettant en avant les richesses de notre terroir. <br> <b>Retrouvez nos propositions de grillades sur place !</b></p>
+				<p style="color: #000">Au fil des saisons nous vous faisons découvrir notre carte mettant en avant les richesses de notre terroir. <br> <b>Retrouvez nos propositions de grillades sur place !</b></p>
 				<img class="separateur_noir img-responsive" src="<?php echo get_template_directory_uri() . '/img/separateur_noir.png'; ?>" alt="Séparateur">
 			</div>
 			<div class="cartes">
-				<img class="epd img-responsive" src="<?php echo get_template_directory_uri(). '/img/epd.jpg'; ?>" alt="Carte Restaurant">
+				<!-- Bouton menus -->
+				<?php wp_nav_menu([
+					"theme_location" => "menu-sup",
+					"container" => "nav",
+					"container_class" => "navbar navbar-expand-lg navbar-light",
+					"menu_class" => "navbar-nav mr-auto",
+					"menu-id" => " ",
+					"walker" => new hostal_walker(),
+			 	]);?>
+
+<!-- 				<img class="epd img-responsive" src="<?php echo get_template_directory_uri(). '/img/epd.jpg'; ?>" alt="Carte Restaurant">
 				<img class="epd img-responsive" src="<?php echo get_template_directory_uri(). '/img/glaces_crêpes.jpg'; ?>" alt="Carte Restaurant">
-			</div>
+ -->			</div>
 		</div>
 		<div class="bandeau_2"></div>
 		<div class="bloc_groupes">
 			<div class="presentation">
 				<div class="animation">
-					<div class="presen_img">
+					<div class="presen_img" id="salle">
 						<img class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/salle.jpg'; ?>" alt="Salle du restaurant">
 					</div>
 					<div class="presen_txt">
@@ -71,7 +81,7 @@ get_header(); ?>
 						<p style="color: #000;">N'hésitez pas à nous contacter !</p>
 						<div class="contacts">
 							<a href="tel:+33468534542" class="groupes_tel">04 68 53 45 42</a>
-							<a href="mailto:hostal66@hotmail.fr" class="groupes_mail">MAIL</a>
+							<a href="mailto:hostal66@hotmail.fr" class="groupes_mail">ENVOYER UN E-MAIL</a>
 						</div>
 					</div>
 				</div>
