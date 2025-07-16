@@ -33,7 +33,7 @@ get_header(); ?>
 					<div class="presen_txt">
 						<h3 style="color: #000;">L'HOSTAL</h3>
 						<h6 style="color: #000;">RESTAURANT À CASTELNOU</h6>
-						<img class="separateur_noir img-responsive" src="<?php echo get_template_directory_uri() . '/img/separateur_noir.png'; ?>" alt="Séparateur">
+						<img class="separateur img-responsive" src="<?php echo get_template_directory_uri() . '/img/separateur_arm.png' ?>" alt="">
 						<p style="color: #000;">Le village médiéval de Castelnou s'érige au creux des Aspres depuis le Xe siècle. Un écrin naturel d'exception et un dédale de ruelles mystérieuses valent à cette commune d'être classée parmi les plus beaux villages de France.</p>
 						<p style="color: #000;">Notre Chef Stéphane Illand vous propose chaque jour une carte et des suggestions de saison.</p>
 						<p style="color: #000;">Du plat réconfortant devant la cheminée en hiver jusqu'à la grillade en terrasse durant l'été, nos spécialités sauront vous séduire toute l'année.</p>
@@ -47,8 +47,8 @@ get_header(); ?>
 		<div class="bloc_menu">
 			<div class="titre">
 				<h3 style="color: #000">LA CARTE DU RESTAURANT</h3>
+				<img class="separateur img-responsive" src="<?php echo get_template_directory_uri() . '/img/separateur_arm.png' ?>" alt="">
 				<p style="color: #000">Au fil des saisons nous vous faisons découvrir notre carte mettant en avant les richesses de notre terroir. <br> <b>Retrouvez nos propositions de grillades sur place !</b></p>
-				<img class="separateur_noir img-responsive" src="<?php echo get_template_directory_uri() . '/img/separateur_noir.png'; ?>" alt="Séparateur">
 			</div>
 			<div class="cartes">
 				<!-- Bouton menus -->
@@ -75,7 +75,7 @@ get_header(); ?>
 					<div class="presen_txt">
 						<h3 id="pensez">PENSEZ À L'HOSTAL</h3>
 						<h6 style="color: #000;">POUR VOS REPAS DE GROUPE</h6>
-						<img class="separateur_noir img-responsive" src="<?php echo get_template_directory_uri() . '/img/separateur_noir.png'; ?>" alt="Séparateur">
+						<img class="separateur img-responsive" src="<?php echo get_template_directory_uri() . '/img/separateur_arm.png' ?>" alt="">
 						<p style="color: #000;">Stéphane et son équipe vous accueillent pour un moment de convivialité en groupe.</p>
 						<p style="color: #000;">Notre Chef pourra vous proposer un menu sur mesure pour chacun de vos événements.</p>
 						<p style="color: #000;">N'hésitez pas à nous contacter !</p>

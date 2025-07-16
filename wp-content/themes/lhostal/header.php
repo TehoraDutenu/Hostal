@@ -37,7 +37,7 @@
 				<img class="nom img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/logo-catalan.png" alt="L'Hostal">
 			</a>
 			<h3>CASTELNOU</h3>
-			<img class="separateur img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/separateur.png" alt="séparateur">
+			<img class="separateur img-responsive" src="<?php echo get_template_directory_uri() . '/img/separateur_arm.png' ?>" alt="">
 			<a class="tel" href="tel:+33468534542">04 68 53 45 42</a>
 
 			<!-- Bouton menus -->

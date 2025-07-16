@@ -10,9 +10,10 @@ footer {
 	bottom: 0;
 	color: #f9f5ee;
 	font-family: "Cormorant Garamond", serif;
-	height: 50vh;
-	position: relative;
-	width: 100%;
+	height: auto;
+	margin: 0;
+ 	position: relative;
+ 	width: 100%;
 }
 
 .footer {
@@ -40,7 +41,7 @@ footer {
 }
 
 .picto {
-	width: 8vw;
+	width: 6vw;
 }
 
 h5 {

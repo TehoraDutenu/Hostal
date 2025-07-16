@@ -5,7 +5,7 @@
 /* En-tête avec image de fond */
 .header {
     position: relative;
-    height: 55vh;
+    height: 65vh;
     background-image: url('../img/background-header.jpg');
     background-size: cover;
     background-position: center;
@@ -60,7 +60,6 @@ h3 {
 }
 
 .separateur {
-	height: auto;
 	margin: 1.3vh 0;
 	width: 30vw;
 }
@@ -93,6 +92,10 @@ h3 {
 	.header {
 	  height: 60vh;
 	}
+
+	.separateur {
+	  width: 20vw;
+	}
   
 	.nom {
 	  max-width: 50vw;
@@ -102,11 +105,7 @@ h3 {
 	h3 {
 	  font-size: 1.5rem;
 	}
-  
-	.separateur {
-	  width: 20vw;
-	}
-  
+    
 	.tel {
 	  font-size: 1.4rem;
 	}
@@ -138,7 +137,7 @@ h3 {
 	}
   
 	.separateur {
-	  width: 12vw;
+	  width: 15vw;
 	}
   
 	.tel {
@@ -158,6 +157,10 @@ h3 {
   
   /* ---------- GRANDS ÉCRANS ---------- */
   @media (min-width: 1440px) {
+	.separateur {
+		width: 12vw;
+	}  
+
 	.header {
 	  height: 65vh;
 	}

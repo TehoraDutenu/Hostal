@@ -33,13 +33,6 @@ div.menus_titre > p {
 	font-weight: bold;
 }
 
-.separateur_menus_noir {
-	height: 1rem;
-	margin: 5% 0;
-	width: 7rem;
-}
-
-
 
 /* -- Media Queries -- */
 
@@ -49,10 +42,10 @@ div.menus_titre > p {
 		margin: auto;
 		width: 90%;
 	}
-	
-	.separateur_menus_noir {
-		margin: 2% 0;
-	}
+
+	.separateur {
+		width: 20vw;
+	}  
 }
 
 
@@ -60,16 +53,15 @@ div.menus_titre > p {
 /* ---------- DESKTOP ---------- */
 @media (min-width: 1024px) {
 	div.menus_titre > h3 {
-		font-size: 2.5rem!important;
+		font-size: 1.8rem!important;
 	}
+
+	.separateur {
+		width: 15vw;
+	}  
 	
 	div.menus_titre > p {
 		font-size: 1.45rem;
-	}
-
-	.separateur_menus_noir {
-		height: 1rem;
-		width: 14rem;
 	}
 }
 
@@ -92,4 +84,8 @@ div.menus_titre > p {
 		margin: auto;
 		width: 75%;
 	}
+
+	.separateur {
+		width: 12vw;
+	}  
 }
